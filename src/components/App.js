@@ -10,17 +10,22 @@ class App extends Component {
             <div id="main">
                {/* Do not remove the main div */}
                <BrowserRouter>
-                <LocationDisplay/>
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
                 <Switch>
                     <Route exact path="/">
+                        <>
+                        <LocationDisplay/>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">About</Link>
                         <Home/>
+                        </>
                     </Route>
                     <Route exact path="/about">
-                        <div>
-                        You are on the about page
-                        </div>
+                        <>
+                        <LocationDisplay/>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">About</Link>
+                        <div>You are on the about page</div>
+                        </>       
                     </Route>
                     <Route path="*"><div>No math</div></Route>
                 </Switch>
