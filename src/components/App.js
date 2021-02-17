@@ -1,6 +1,6 @@
 import React, {Component, useState} from "react";
 import { useLocation, BrowserRouter, Route, Switch, Link } from "react-router-dom";
-// import { Route, Switch, Link } from "react-router";
+import { Route, Switch, Link } from "react-router";
 import '../styles/App.css';
 
 class App extends Component {
